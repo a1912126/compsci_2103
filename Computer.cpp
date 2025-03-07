@@ -1,3 +1,20 @@
 #include "Computer.h"
 
-Computer::Computer():Player("Computer",'R'){};
+char Computer::makeMove()
+
+{
+
+    return 'R';
+
+}
+
+
+std::string Computer::getName()
+
+{
+
+    return "Computer";
+
+}
+
+

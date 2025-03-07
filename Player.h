@@ -1,12 +1,17 @@
 #ifndef PLAYER_H
+
 #define PLAYER_H
+
 #include <iostream>
+
 class Player{
+
     public:
-        std::string playerName;
-        char move;
-        Player(std::string name, char move);
-        char makeMove();
-        std::string getName();
+
+        virtual char makeMove()=0;
+
+        virtual std::string getName()=0;
+
 };
+
 #endif
