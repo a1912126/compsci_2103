@@ -4,7 +4,7 @@ std::list<int> bigNumCalc::buildBigNum(std::string numString)
 {
     std::list<int>result;
     for (char c :numString){
-        result.push_back(c - '0');
+        result.push_back(int(c));
     }
     if (result.empty()) {
         result.push_back(0);
